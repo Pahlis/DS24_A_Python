@@ -1,36 +1,116 @@
-# DS24_A_Python
-Course: Advanced Programming in Python
+🌦️ Weather Data Collector
+Automated Python script that fetches current weather data for Malmö using the Open-Meteo API, stores it in a local SQLite database, and logs all activity. Includes a scheduler and test suite.
 
-# 🌦️ Weather Data Collector
+📚 Table of Contents
+Features
 
-Automated script to fetch weather data for Malmö using the [Open-Meteo API](https://open-meteo.com/), store it in an SQLite database, and log activity. Includes a scheduler and test suite.
+Project Structure
 
-## Project Structure
+Setup and Installation
 
-```
+Configuration
+
+Usage
+
+How It Works
+
+Fetching Weather Data
+
+Storing Weather Data
+
+Scheduler
+
+Testing
+
+Logging
+
+✨ Features
+Fetches current temperature, windspeed, and weather code for Malmö.
+
+Stores data in a local SQLite database (weather.db).
+
+Logs all operations and errors to weather.log and scheduler.log.
+
+Includes a scheduler that runs the script every 30 minutes.
+
+Contains tests to verify API response and database integrity.
+
+📁 Project Structure
+Kod
 weather_project/
-├── main.py              # Fetches and saves weather data
-├── scheduler.py         # Runs main.py at scheduled intervals
-├── test_weather.py      # Pytest-based tests for core functions
+├── main.py              # Fetches and stores weather data
+├── scheduler.py         # Runs main.py at intervals
+├── test_weather.py      # Pytest-based tests
+├── requirements.txt     # Dependencies
 ├── weather.db           # SQLite database (auto-created)
-├── weather.log          # Log file for weather retrieval
-├── scheduler.log        # Log file for scheduler activity
-└── requirements.txt     # Project dependencies
-```
+├── weather.log          # Weather log file
+├── scheduler.log        # Scheduler log file
+⚙️ Setup and Installation
+Clone the repository:
 
-## How to Run
+bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+Create and activate a virtual environment:
 
-### 1. Install dependencies
-```bash
+bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate     # Windows
+Install dependencies:
+
+bash
 pip install -r requirements.txt
-```bash
+🔧 Configuration
+Edit main.py to change:
 
-### 2. Run manually
-```bash
+LATITUDE, LONGITUDE: coordinates for your location
+
+DB_PATH: database file name
+
+LOG_PATH: log file name
+
+🚀 Usage
+Run manually:
+
+bash
 python main.py
-```bash
+Run with scheduler:
 
-### 3. Run with scheduler
-```bash
+bash
 python scheduler.py
-```bash
+The scheduler runs the weather job every 30 minutes by default. You can change the interval in scheduler.py.
+
+🧠 How It Works
+📡 Fetching Weather Data
+The fetch_weather() function calls the Open-Meteo API and returns:
+
+Temperature (°C)
+
+Windspeed (m/s)
+
+Weather code (int)
+
+🗃️ Storing Weather Data
+The save_to_db() function creates the table (if needed) and inserts the latest weather data with a timestamp.
+
+⏱️ Scheduler
+scheduler.py uses the schedule library to run main.py at regular intervals. It logs each run and handles errors gracefully.
+
+🧪 Testing
+Run all tests using pytest:
+
+bash
+pytest test_weather.py
+Tests include:
+
+Type and range checks for API data
+
+Database save and retrieval
+
+Timestamp format validation
+
+🪵 Logging
+weather.log: logs weather retrieval and database operations
+
+scheduler.log: logs scheduled runs and errors
