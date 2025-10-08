@@ -1,7 +1,7 @@
-🌦️ Weather Data Collector
+#🌦️ Weather Data Collector
 Automated Python script that fetches current weather data for Malmö using the Open-Meteo API, stores it in a local SQLite database, and logs all activity. Includes a scheduler and test suite.
 
-📚 Table of Contents
+#📚 Table of Contents
 Features
 
 Project Structure
@@ -24,7 +24,7 @@ Testing
 
 Logging
 
-✨ Features
+#✨ Features
 Fetches current temperature, windspeed, and weather code for Malmö.
 
 Stores data in a local SQLite database (weather.db).
@@ -35,7 +35,7 @@ Includes a scheduler that runs the script every 30 minutes.
 
 Contains tests to verify API response and database integrity.
 
-📁 Project Structure
+#📁 Project Structure
 Kod
 weather_project/
 ├── main.py              # Fetches and stores weather data
@@ -70,7 +70,7 @@ DB_PATH: database file name
 
 LOG_PATH: log file name
 
-🚀 Usage
+#🚀 Usage
 Run manually:
 
 bash
@@ -81,7 +81,7 @@ bash
 python scheduler.py
 The scheduler runs the weather job every 30 minutes by default. You can change the interval in scheduler.py.
 
-🧠 How It Works
+##🧠 How It Works
 📡 Fetching Weather Data
 The fetch_weather() function calls the Open-Meteo API and returns:
 
@@ -91,13 +91,13 @@ Windspeed (m/s)
 
 Weather code (int)
 
-🗃️ Storing Weather Data
+##🗃️ Storing Weather Data
 The save_to_db() function creates the table (if needed) and inserts the latest weather data with a timestamp.
 
-⏱️ Scheduler
+#⏱️ Scheduler
 scheduler.py uses the schedule library to run main.py at regular intervals. It logs each run and handles errors gracefully.
 
-🧪 Testing
+#🧪 Testing
 Run all tests using pytest:
 
 bash
