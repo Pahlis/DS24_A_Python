@@ -16,10 +16,16 @@ weather_project/
 ├── weather.log          # Log file for weather retrieval
 ├── scheduler.log        # Log file for scheduler activity
 └── requirements.txt     # Project dependencies
-
+```
 
 ## How to Run
 
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+
+### 2. Run manually
+python main.py
+
+### 3. Run with scheduler
+python scheduler.py
