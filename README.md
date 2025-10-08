@@ -7,6 +7,7 @@ Automated script to fetch weather data for Malmö using the [Open-Meteo API](htt
 
 ## Project Structure
 
+```
 weather_project/
 ├── main.py              # Fetches and saves weather data
 ├── scheduler.py         # Runs main.py at scheduled intervals
