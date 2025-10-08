@@ -23,9 +23,14 @@ weather_project/
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+```bash
 
 ### 2. Run manually
+```bash
 python main.py
+```bash
 
 ### 3. Run with scheduler
+```bash
 python scheduler.py
+```bash
