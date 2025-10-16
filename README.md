@@ -7,7 +7,7 @@ Automated Python script that fetches current weather data for Malmö using the [
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -23,7 +23,7 @@ Automated Python script that fetches current weather data for Malmö using the [
 
 ---
 
-## ✨ Features
+## Features
 
 - Fetches current temperature, windspeed, and weather code for Malmö.
 - Stores data in a local SQLite database (`weather.db`).
@@ -33,7 +33,7 @@ Automated Python script that fetches current weather data for Malmö using the [
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 weather_project/
@@ -48,7 +48,7 @@ weather_project/
 
 ---
 
-## ⚙️ Setup and Installation
+## Setup and Installation
 
 Clone the repository:
 ```bash
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 Edit `main.py` to change:
 - `LATITUDE`, `LONGITUDE`: coordinates for your location
@@ -79,7 +79,7 @@ Edit `main.py` to change:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Run manually:
 ```bash
@@ -95,23 +95,23 @@ The scheduler runs the weather job every 30 minutes by default. You can change t
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-### 📡 Fetching Weather Data
+### Fetching Weather Data
 The `fetch_weather()` function calls the Open-Meteo API and returns:
 - Temperature (°C)
 - Windspeed (m/s)
 - Weather code (int)
 
-### 🗃️ Storing Weather Data
+### Storing Weather Data
 The `save_to_db()` function creates the table (if needed) and inserts the latest weather data with a timestamp.
 
-### ⏱️ Scheduler
+### Scheduler
 `scheduler.py` uses the `schedule` library to run `main.py` at regular intervals. It logs each run and handles errors gracefully.
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Run all tests using `pytest`:
 ```bash
@@ -125,9 +125,12 @@ Tests include:
 
 ---
 
-## 🪵 Logging
+## Logging
 
 - `weather.log`: logs weather retrieval and database operations
 - `scheduler.log`: logs scheduled runs and errors
+
+<img width="757" height="492" alt="image" src="https://github.com/user-attachments/assets/fcebc796-93e5-4041-a095-ce330da5874d" />
+
 
 ---
