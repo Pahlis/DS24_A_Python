@@ -53,7 +53,7 @@ weather_project/
 Clone the repository:
 ```bash
 git clone https://github.com/Pahlis/DS24_A_Python.git
-cd YOUR_REPO_NAME
+cd DS24_A_Python
 ```
 
 Create and activate a virtual environment:
