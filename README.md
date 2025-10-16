@@ -130,7 +130,8 @@ Tests include:
 - `weather.log`: logs weather retrieval and database operations
 - `scheduler.log`: logs scheduled runs and errors
 
-<img width="757" height="492" alt="image" src="https://github.com/user-attachments/assets/fcebc796-93e5-4041-a095-ce330da5874d" />
+<img width="719" height="194" alt="image" src="https://github.com/user-attachments/assets/dd1abc7e-e306-46f5-8ac0-00e0ace5ea77" />
+
 
 
 ---
