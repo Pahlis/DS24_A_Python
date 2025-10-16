@@ -1,0 +1,24 @@
+2025-10-04 15:14:57,527 - INFO - ==================================================
+2025-10-04 15:14:57,527 - INFO - Startar väderhämtning...
+2025-10-04 15:14:57,775 - INFO - Hämtat väderdata: 9.9°C, 24.1 m/s, kod 63
+2025-10-04 15:14:57,787 - INFO - Data sparad i databas: 2025-10-04T15:14:57.783731
+2025-10-04 15:14:57,787 - INFO - Körning slutförd framgångsrikt
+2025-10-04 15:19:00,333 - INFO - Scheduler startad - kör varje timme
+2025-10-04 15:19:00,333 - INFO - Schemalagd körning startar...
+2025-10-04 15:19:00,333 - INFO - ==================================================
+2025-10-04 15:19:00,333 - INFO - Startar väderhämtning...
+2025-10-04 15:19:00,582 - INFO - Hämtat väderdata: 10.1°C, 24.1 m/s, kod 63
+2025-10-04 15:19:00,591 - INFO - Data sparad i databas: 2025-10-04T15:19:00.585956
+2025-10-04 15:19:00,591 - INFO - Körning slutförd framgångsrikt
+2025-10-04 15:19:00,591 - INFO - Schemalagd körning slutförd
+2025-10-04 15:19:13,023 - INFO - Scheduler stoppad av användare
+2025-10-04 15:32:26,873 - INFO - ==================================================
+2025-10-04 15:32:26,873 - INFO - Starting weather retrieval...
+2025-10-04 15:32:27,127 - INFO - Fetched weather data: 10.4°C, 24.5 m/s, code 63
+2025-10-04 15:32:27,137 - INFO - Data saved to database: 2025-10-04T15:32:27.128649
+2025-10-04 15:32:27,137 - INFO - Execution completed successfully
+2025-10-08 15:41:44,625 - INFO - ==================================================
+2025-10-08 15:41:44,628 - INFO - Starting weather retrieval...
+2025-10-08 15:41:44,842 - INFO - Fetched weather data: 15.9°C, 10.8 m/s, code 3
+2025-10-08 15:41:44,855 - INFO - Data saved to database: 2025-10-08T15:41:44.850920
+2025-10-08 15:41:44,855 - INFO - Execution completed successfully
