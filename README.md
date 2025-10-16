@@ -52,7 +52,7 @@ weather_project/
 
 Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/Pahlis/DS24_A_Python.git
 cd YOUR_REPO_NAME
 ```
 
