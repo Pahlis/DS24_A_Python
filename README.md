@@ -131,6 +131,7 @@ Tests include:
 - `scheduler.log`: logs scheduled runs and errors
 
 <img width="719" height="194" alt="image" src="https://github.com/user-attachments/assets/dd1abc7e-e306-46f5-8ac0-00e0ace5ea77" />
+<img width="650" height="167" alt="image" src="https://github.com/user-attachments/assets/50f29f8e-4103-4986-a778-3f94ede21fcd" />
 
 
 
