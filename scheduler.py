@@ -9,12 +9,13 @@ import logging
 from main import main as run_weather_job
 
 # Set up logging
-logging.basicConfig(
-    filename="scheduler.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("scheduler")
+logger.setLevel(logging.INFO)
+
+if not logger.handlers:
+    handler = logging.FileHandler("scheduler.log")
+    handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    logger.addHandler(handler)
 
 
 def job() -> None:
@@ -37,13 +38,13 @@ def main() -> None:
     # Schedule job – choose one option:
 
     # Option 1: Every 30 minutes (good for testing)
-    schedule.every(30).minutes.do(job)
+    # schedule.every(30).minutes.do(job)
 
     # Option 2: Every day at 08:00
     # schedule.every().day.at("08:00").do(job)
 
     # Option 3: Every 5 minutes (good for demo)
-    # schedule.every(5).minutes.do(job)
+    schedule.every(5).minutes.do(job)
 
     logger.info("Scheduler started")
     print("Scheduler running! Press Ctrl+C to stop.")
@@ -62,4 +63,5 @@ def main() -> None:
         print("\nScheduler terminated.")
 
 if __name__ == "__main__":
+    logger.info("Scheduler script started")  # Flytta hit
     main()

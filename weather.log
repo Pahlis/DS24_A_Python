@@ -22,3 +22,37 @@
 2025-10-08 15:41:44,842 - INFO - Fetched weather data: 15.9°C, 10.8 m/s, code 3
 2025-10-08 15:41:44,855 - INFO - Data saved to database: 2025-10-08T15:41:44.850920
 2025-10-08 15:41:44,855 - INFO - Execution completed successfully
+2025-10-16 18:58:43,527 - INFO - Scheduler started
+2025-10-16 18:58:43,528 - INFO - Scheduled run starting...
+2025-10-16 18:58:43,528 - INFO - ==================================================
+2025-10-16 18:58:43,528 - INFO - Starting weather retrieval...
+2025-10-16 18:58:43,869 - INFO - Fetched weather data: 14.4°C, 16.6 m/s, code 3
+2025-10-16 18:58:43,885 - INFO - Data saved to database: 2025-10-16T18:58:43.880048
+2025-10-16 18:58:43,885 - INFO - Execution completed successfully
+2025-10-16 18:58:43,885 - INFO - Scheduled run completed.
+2025-10-16 18:59:29,549 - INFO - Scheduler stopped by user
+2025-10-16 19:07:13,176 - INFO - Scheduler started
+2025-10-16 19:07:13,177 - INFO - Scheduled run starting...
+2025-10-16 19:07:13,177 - INFO - ==================================================
+2025-10-16 19:07:13,177 - INFO - Starting weather retrieval...
+2025-10-16 19:07:13,498 - INFO - Fetched weather data: 14.2°C, 16.6 m/s, code 3
+2025-10-16 19:07:13,509 - INFO - Data saved to database: 2025-10-16T19:07:13.502351
+2025-10-16 19:07:13,509 - INFO - Execution completed successfully
+2025-10-16 19:07:13,509 - INFO - Scheduled run completed.
+2025-10-16 19:07:47,395 - INFO - Scheduler stopped by user
+2025-10-16 19:07:47,395 - INFO - Scheduler script started
+2025-10-26 15:52:09,848 - INFO - Scheduler script started
+2025-10-26 15:52:09,848 - INFO - Scheduler started
+2025-10-26 15:52:09,848 - INFO - Scheduled run starting...
+2025-10-26 15:52:09,848 - INFO - ==================================================
+2025-10-26 15:52:09,848 - INFO - Starting weather retrieval...
+2025-10-26 15:52:10,119 - INFO - Fetched weather data: 7.9°C, 14.4 m/s, code 51
+2025-10-26 15:52:10,131 - INFO - Data saved to database: 2025-10-26T15:52:10.126938
+2025-10-26 15:52:10,131 - INFO - Execution completed successfully
+2025-10-26 15:52:10,131 - INFO - Scheduled run completed.
+2025-10-26 15:52:47,107 - INFO - Scheduler stopped by user
+2025-10-26 15:56:43,913 - INFO - ==================================================
+2025-10-26 15:56:43,913 - INFO - Starting weather retrieval...
+2025-10-26 15:56:44,186 - INFO - Fetched weather data: 7.9°C, 14.4 m/s, code 51
+2025-10-26 15:56:44,199 - INFO - Data saved to database: 2025-10-26T15:56:44.188572
+2025-10-26 15:56:44,199 - INFO - Execution completed successfully

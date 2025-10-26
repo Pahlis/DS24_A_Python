@@ -16,13 +16,15 @@ LONGITUDE = 13.00
 DB_PATH = "weather.db"
 LOG_PATH = "weather.log"
 
+
 # Logging setup
-logging.basicConfig(
-    filename=LOG_PATH,
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+if not logger.handlers:
+    handler = logging.FileHandler(LOG_PATH)
+    handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    logger.addHandler(handler)
 
 # Fetch weather data
 def fetch_weather() -> Tuple[float, float, int]:
